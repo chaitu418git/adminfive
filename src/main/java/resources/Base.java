@@ -21,10 +21,10 @@ public class Base {
 public WebDriver initializeDriver() throws IOException
 {
 	prop=new Properties();
-	FileInputStream fis=new FileInputStream("C:\\Users\\Chaitu\\eclipse-workspace\\Project\\src\\main\\java\\resources\\data.properties");
+	FileInputStream fis=new FileInputStream("E:\\New Selenium\\DemoFramework\\src\\main\\java\\resources\\data.properties");
     prop.load(fis);
     String browserName=prop.getProperty("browser");
-    String diverPath="E:\\MyNewSelenium\\chromedriver_win32\\chromedriver.exe";
+    String diverPath="E:\\New Selenium\\chromedriver_win32\\chromedriver.exe";
     if(browserName.equalsIgnoreCase("chrome"))
     {
     	System.setProperty("webdriver.chrome.driver", diverPath);

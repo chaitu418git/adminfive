@@ -1,122 +1,332 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="4" passed="3" failed="1" skipped="0">
+<testng-results skipped="4" failed="0" ignored="0" total="4" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-12-27T04:01:51Z" name="Suite" finished-at="2019-12-27T04:02:51Z" duration-ms="59708">
+  <suite name="Suite" duration-ms="636" started-at="2019-12-27T19:16:20 IST" finished-at="2019-12-27T19:16:21 IST">
     <groups>
     </groups>
-    <test started-at="2019-12-27T04:01:51Z" name="Test" finished-at="2019-12-27T04:01:51Z" duration-ms="10">
+    <test name="Test" duration-ms="15" started-at="2019-12-27T19:16:20 IST" finished-at="2019-12-27T19:16:20 IST">
     </test> <!-- Test -->
-    <test started-at="2019-12-27T04:01:51Z" name="Validating Text" finished-at="2019-12-27T04:02:07Z" duration-ms="15761">
+    <test name="Validating Text" duration-ms="89" started-at="2019-12-27T19:16:21 IST" finished-at="2019-12-27T19:16:21 IST">
       <class name="Academy.ValidateText">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Academy.ValidateText@6bb75258]" started-at="2019-12-27T09:31:51Z" name="initialize" finished-at="2019-12-27T09:32:04Z" duration-ms="13073" status="PASS">
+        <test-method status="FAIL" signature="initialize()[pri:0, instance:Academy.ValidateText@69504ae9]" name="initialize" is-config="true" duration-ms="16" started-at="2019-12-27T19:16:21 IST" finished-at="2019-12-27T19:16:21 IST">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[C:\Users\Chaitu\eclipse-workspace\Project\src\main\java\resources\data.properties (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: C:\Users\Chaitu\eclipse-workspace\Project\src\main\java\resources\data.properties (The system cannot find the path specified)
+at java.io.FileInputStream.open0(Native Method)
+at java.io.FileInputStream.open(Unknown Source)
+at java.io.FileInputStream.<init>(Unknown Source)
+at java.io.FileInputStream.<init>(Unknown Source)
+at resources.Base.initializeDriver(Base.java:24)
+at Academy.ValidateText.initialize(ValidateText.java:21)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:623)
+at org.testng.TestRunner.beforeRun(TestRunner.java:613)
+at org.testng.TestRunner.run(TestRunner.java:584)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="validateText()[pri:0, instance:Academy.ValidateText@6bb75258]" started-at="2019-12-27T09:32:04Z" name="validateText" finished-at="2019-12-27T09:32:04Z" duration-ms="241" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method status="SKIP" signature="validateText()[pri:0, instance:Academy.ValidateText@69504ae9]" name="validateText" duration-ms="0" started-at="2019-12-27T19:16:21 IST" finished-at="2019-12-27T19:16:21 IST">
+          <exception class="java.io.FileNotFoundException">
             <message>
-              <![CDATA[expected [FEATURED COURSES123] but found [FEATURED COURSES]]]>
+              <![CDATA[C:\Users\Chaitu\eclipse-workspace\Project\src\main\java\resources\data.properties (The system cannot find the path specified)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [FEATURED COURSES123] but found [FEATURED COURSES]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:176)
-	at org.testng.Assert.assertEquals(Assert.java:186)
-	at Academy.ValidateText.validateText(ValidateText.java:34)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+              <![CDATA[java.io.FileNotFoundException: C:\Users\Chaitu\eclipse-workspace\Project\src\main\java\resources\data.properties (The system cannot find the path specified)
+at java.io.FileInputStream.open0(Native Method)
+at java.io.FileInputStream.open(Unknown Source)
+at java.io.FileInputStream.<init>(Unknown Source)
+at java.io.FileInputStream.<init>(Unknown Source)
+at resources.Base.initializeDriver(Base.java:24)
+at Academy.ValidateText.initialize(ValidateText.java:21)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:623)
+at org.testng.TestRunner.beforeRun(TestRunner.java:613)
+at org.testng.TestRunner.run(TestRunner.java:584)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateText -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Academy.ValidateText@6bb75258]" started-at="2019-12-27T09:32:07Z" name="tearDown" finished-at="2019-12-27T09:32:07Z" duration-ms="178" status="PASS">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:Academy.ValidateText@69504ae9]" name="tearDown" is-config="true" duration-ms="-1577454381173" started-at="2019-12-27T19:16:21 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Academy.ValidateText -->
     </test> <!-- Validating Text -->
-    <test started-at="2019-12-27T04:02:07Z" name="Validating Navigation Bar" finished-at="2019-12-27T04:02:15Z" duration-ms="7788">
+    <test name="Validating Navigation Bar" duration-ms="21" started-at="2019-12-27T19:16:21 IST" finished-at="2019-12-27T19:16:21 IST">
       <class name="Academy.ValidateNavigationBar">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Academy.ValidateNavigationBar@305f7627]" started-at="2019-12-27T09:32:07Z" name="initialize" finished-at="2019-12-27T09:32:14Z" duration-ms="7390" status="PASS">
+        <test-method status="FAIL" signature="initialize()[pri:0, instance:Academy.ValidateNavigationBar@71687585]" name="initialize" is-config="true" duration-ms="1" started-at="2019-12-27T19:16:21 IST" finished-at="2019-12-27T19:16:21 IST">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[C:\Users\Chaitu\eclipse-workspace\Project\src\main\java\resources\data.properties (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: C:\Users\Chaitu\eclipse-workspace\Project\src\main\java\resources\data.properties (The system cannot find the path specified)
+at java.io.FileInputStream.open0(Native Method)
+at java.io.FileInputStream.open(Unknown Source)
+at java.io.FileInputStream.<init>(Unknown Source)
+at java.io.FileInputStream.<init>(Unknown Source)
+at resources.Base.initializeDriver(Base.java:24)
+at Academy.ValidateNavigationBar.initialize(ValidateNavigationBar.java:22)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:623)
+at org.testng.TestRunner.beforeRun(TestRunner.java:613)
+at org.testng.TestRunner.run(TestRunner.java:584)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="validateText()[pri:0, instance:Academy.ValidateNavigationBar@305f7627]" started-at="2019-12-27T09:32:14Z" name="validateText" finished-at="2019-12-27T09:32:15Z" duration-ms="249" status="PASS">
+        <test-method status="SKIP" signature="validateText()[pri:0, instance:Academy.ValidateNavigationBar@71687585]" name="validateText" duration-ms="0" started-at="2019-12-27T19:16:21 IST" finished-at="2019-12-27T19:16:21 IST">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[C:\Users\Chaitu\eclipse-workspace\Project\src\main\java\resources\data.properties (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: C:\Users\Chaitu\eclipse-workspace\Project\src\main\java\resources\data.properties (The system cannot find the path specified)
+at java.io.FileInputStream.open0(Native Method)
+at java.io.FileInputStream.open(Unknown Source)
+at java.io.FileInputStream.<init>(Unknown Source)
+at java.io.FileInputStream.<init>(Unknown Source)
+at resources.Base.initializeDriver(Base.java:24)
+at Academy.ValidateNavigationBar.initialize(ValidateNavigationBar.java:22)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:623)
+at org.testng.TestRunner.beforeRun(TestRunner.java:613)
+at org.testng.TestRunner.run(TestRunner.java:584)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateText -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Academy.ValidateNavigationBar@305f7627]" started-at="2019-12-27T09:32:15Z" name="tearDown" finished-at="2019-12-27T09:32:15Z" duration-ms="142" status="PASS">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:Academy.ValidateNavigationBar@71687585]" name="tearDown" is-config="true" duration-ms="-1577454381263" started-at="2019-12-27T19:16:21 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Academy.ValidateNavigationBar -->
     </test> <!-- Validating Navigation Bar -->
-    <test started-at="2019-12-27T04:02:15Z" name="Validating User login" finished-at="2019-12-27T04:02:51Z" duration-ms="36050">
+    <test name="Validating User login" duration-ms="116" started-at="2019-12-27T19:16:21 IST" finished-at="2019-12-27T19:16:21 IST">
       <class name="Academy.HomePage">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Academy.HomePage@557a1e2d]" started-at="2019-12-27T09:32:15Z" name="initialize" finished-at="2019-12-27T09:32:17Z" duration-ms="2374" status="PASS">
+        <test-method status="FAIL" signature="initialize()[pri:0, instance:Academy.HomePage@7d3e8655]" name="initialize" is-config="true" duration-ms="1" started-at="2019-12-27T19:16:21 IST" finished-at="2019-12-27T19:16:21 IST">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[C:\Users\Chaitu\eclipse-workspace\Project\src\main\java\resources\data.properties (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: C:\Users\Chaitu\eclipse-workspace\Project\src\main\java\resources\data.properties (The system cannot find the path specified)
+at java.io.FileInputStream.open0(Native Method)
+at java.io.FileInputStream.open(Unknown Source)
+at java.io.FileInputStream.<init>(Unknown Source)
+at java.io.FileInputStream.<init>(Unknown Source)
+at resources.Base.initializeDriver(Base.java:24)
+at Academy.HomePage.initialize(HomePage.java:22)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:623)
+at org.testng.TestRunner.beforeRun(TestRunner.java:613)
+at org.testng.TestRunner.run(TestRunner.java:584)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="basePageNavigation(java.lang.String, java.lang.String)[pri:0, instance:Academy.HomePage@557a1e2d]" started-at="2019-12-27T09:32:17Z" name="basePageNavigation" data-provider="getData" finished-at="2019-12-27T09:32:36Z" duration-ms="18867" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[abc@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[abc@1234]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="basePageNavigation(java.lang.String, java.lang.String)[pri:0, instance:Academy.HomePage@7d3e8655]" name="basePageNavigation" duration-ms="0" started-at="2019-12-27T19:16:21 IST" data-provider="getData" finished-at="2019-12-27T19:16:21 IST">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[C:\Users\Chaitu\eclipse-workspace\Project\src\main\java\resources\data.properties (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: C:\Users\Chaitu\eclipse-workspace\Project\src\main\java\resources\data.properties (The system cannot find the path specified)
+at java.io.FileInputStream.open0(Native Method)
+at java.io.FileInputStream.open(Unknown Source)
+at java.io.FileInputStream.<init>(Unknown Source)
+at java.io.FileInputStream.<init>(Unknown Source)
+at resources.Base.initializeDriver(Base.java:24)
+at Academy.HomePage.initialize(HomePage.java:22)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:623)
+at org.testng.TestRunner.beforeRun(TestRunner.java:613)
+at org.testng.TestRunner.run(TestRunner.java:584)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
-        <test-method signature="basePageNavigation(java.lang.String, java.lang.String)[pri:0, instance:Academy.HomePage@557a1e2d]" started-at="2019-12-27T09:32:36Z" name="basePageNavigation" data-provider="getData" finished-at="2019-12-27T09:32:51Z" duration-ms="14584" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[abcd@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[abac@1234]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="basePageNavigation(java.lang.String, java.lang.String)[pri:0, instance:Academy.HomePage@7d3e8655]" name="basePageNavigation" duration-ms="0" started-at="2019-12-27T19:16:21 IST" data-provider="getData" finished-at="2019-12-27T19:16:21 IST">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[C:\Users\Chaitu\eclipse-workspace\Project\src\main\java\resources\data.properties (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: C:\Users\Chaitu\eclipse-workspace\Project\src\main\java\resources\data.properties (The system cannot find the path specified)
+at java.io.FileInputStream.open0(Native Method)
+at java.io.FileInputStream.open(Unknown Source)
+at java.io.FileInputStream.<init>(Unknown Source)
+at java.io.FileInputStream.<init>(Unknown Source)
+at resources.Base.initializeDriver(Base.java:24)
+at Academy.HomePage.initialize(HomePage.java:22)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:623)
+at org.testng.TestRunner.beforeRun(TestRunner.java:613)
+at org.testng.TestRunner.run(TestRunner.java:584)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Academy.HomePage@557a1e2d]" started-at="2019-12-27T09:32:51Z" name="tearDown" finished-at="2019-12-27T09:32:51Z" duration-ms="218" status="PASS">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:Academy.HomePage@7d3e8655]" name="tearDown" is-config="true" duration-ms="-1577454381456" started-at="2019-12-27T19:16:21 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
