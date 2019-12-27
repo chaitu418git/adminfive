@@ -57,12 +57,30 @@
         <artifactId>selenium-java</artifactId>
         <version>3.141.59</version>
     </dependency>
-    <dependency>
-  <groupId>org.testng</groupId>
-  <artifactId>testng</artifactId>
-  <version>6.8</version>
-  <scope>test</scope>
+<!--     https://mvnrepository.com/artifact/org.testng/testng -->
+<!-- <dependency> -->
+<!--     <groupId>org.testng</groupId> -->
+<!--     <artifactId>testng</artifactId> -->
+<!--     <version>6.8</version> -->
+<!--     <scope>test</scope> -->
+<!-- </dependency> -->
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<!-- <dependency> -->
+<!--     <groupId>org.testng</groupId> -->
+<!--     <artifactId>testng</artifactId> -->
+<!--     <version>6.8.13</version> -->
+<!--     <scope>test</scope> -->
+<!-- </dependency> -->
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>6.14.3</version>
+    <scope>test</scope>
 </dependency>
+
+
+
     <dependency>
     <groupId>org.apache.logging.log4j</groupId>
     <artifactId>log4j-api</artifactId>
