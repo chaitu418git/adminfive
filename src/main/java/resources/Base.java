@@ -14,6 +14,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Base {
 	public static WebDriver driver;
@@ -40,6 +41,7 @@ public WebDriver initializeDriver() throws IOException
     	 driver=new InternetExplorerDriver();
     }
     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+    driver.manage().window().maximize();
 	return driver;
     
 } 
@@ -47,5 +49,14 @@ public void getScreenshot(String result) throws IOException {
 	File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
     FileUtils.copyFile(src, new File("E:\\Selenium New -Must Learn\\testscreenshots\\"+result+"screenshot.png"));
     
+}
+public void explicitwait()
+{
+	
+	
+}
+public void browserClose()
+{
+	driver.close();
 }
 }
